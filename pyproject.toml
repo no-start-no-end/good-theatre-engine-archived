@@ -1,0 +1,17 @@
+[project]
+name = "good-theatre-engine"
+version = "0.2.0"
+description = "AI-orchestrated theatre system with universal message bus and cue list control"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+gte-analyse = "src.analyse:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
